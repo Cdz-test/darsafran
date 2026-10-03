@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dar Safran — Hôtel boutique, Médina de Marrakech</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{ocre:'#C4552B',terre:'#7A2E1A',nuit:'#1A0F0C',sable:'#F3E6D3',safran:'#E9A23B',zellige:'#1F5C5A'},fontFamily:{display:['"Bodoni Moda"','serif'],sans:['"Manrope"','sans-serif'],arabe:['"Marcellus"','serif']}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Manrope:wght@300;400;600&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+    <meta name="description" content="Dar Safran">
+</head>
+<body class="bg-sable text-nuit font-sans antialiased overflow-x-hidden">
+
+<header class="fixed top-0 inset-x-0 z-50 mix-blend-difference text-sable">
+<nav class="flex items-center justify-between px-5 md:px-10 py-5">
+<a href="#" class="font-display text-xl md:text-2xl tracking-tight italic">Dar Safran</a>
+<div class="hidden md:flex gap-8 text-xs uppercase tracking-[0.3em]">
+<a href="#riad" class="hover:opacity-60 transition">Le Riad</a><a href="#chambres" class="hover:opacity-60 transition">Chambres</a><a href="#table" class="hover:opacity-60 transition">Table</a><a href="#hammam" class="hover:opacity-60 transition">Hammam</a></div>
+<a href="#reserver" class="text-xs uppercase tracking-[0.3em] border border-sable/60 rounded-full px-4 py-2 hover:bg-sable hover:text-nuit transition">Réserver</a>
+</nav>
+</header>
+
+<section class="relative min-h-[100svh] bg-nuit text-sable overflow-hidden flex items-end">
+<style>
+@keyframes heroImg{from{clip-path:inset(50% 50% 50% 50% round 999px 999px 0 0);transform:scale(1.25)}to{clip-path:inset(0 0 0 0 round 999px 999px 0 0);transform:none}}
+@keyframes up{from{opacity:0;transform:translateY(110%)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.h-img{animation:heroImg 1.8s cubic-bezier(0.16,1,0.3,1) both}
+.h-line{display:block;animation:up 1.3s cubic-bezier(0.16,1,0.3,1) both}
+.h-fade{animation:fade 1.5s ease both .9s}
+.spin{animation:spin 30s linear infinite}
+.grain{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+@media (prefers-reduced-motion:reduce){.h-img,.h-line,.h-fade,.spin{animation:none}}
+</style>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_30%,#C4552B55,transparent_60%)]"></div>
+<div class="absolute right-0 md:right-[8%] top-24 md:top-16 w-[78%] md:w-[38%] max-w-[560px] aspect-[3/4] overflow-hidden rounded-t-full h-img">
+<img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Patio de riad à Marrakech avec arches et fontaine" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-nuit/70 to-transparent"></div>
+</div>
+<div class="absolute top-28 left-5 md:left-10 w-28 h-28 md:w-36 md:h-36 h-fade">
+<div class="spin w-full h-full rounded-full border border-safran/50 flex items-center justify-center text-[10px] tracking-[0.35em] uppercase text-safran text-center p-4">✦ Médina · Depuis 1924 · Neuf chambres ✦</div>
+</div>
+<div class="absolute inset-0 grain opacity-[0.08] pointer-events-none"></div>
+<div class="relative z-10 w-full px-5 md:px-10 pb-12 md:pb-16">
+<p class="h-fade font-arabe text-safran text-2xl md:text-3xl mb-4">دار الزعفران</p>
+<h1 class="font-display font-black leading-[0.82] tracking-[-0.04em] text-[clamp(3.6rem,13vw,13rem)]">
+<span class="block overflow-hidden"><span class="h-line" style="animation-delay:.3s">L'ombre</span></span>
+<span class="block overflow-hidden"><span class="h-line italic font-normal text-safran" style="animation-delay:.45s">couleur</span></span>
+<span class="block overflow-hidden"><span class="h-line" style="animation-delay:.6s">safran.</span></span>
+</h1>
+<div class="h-fade mt-8 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+<p class="max-w-md text-sable/75 leading-relaxed">Neuf chambres autour d'un patio d'orangers, à trois ruelles de la place Jemaa el-Fna. Un riad de 1924 où le temps se mesure à la course de la lumière sur le tadelakt.</p>
+<a href="#reserver" class="group inline-flex items-center gap-3 bg-ocre px-7 py-4 rounded-full w-max hover:bg-safran hover:text-nuit transition hover:-translate-y-1 duration-500">Séjourner chez nous <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i></a>
+</div>
+</div>
+</section>
+
+<div class="bg-ocre text-sable py-5 overflow-hidden">
+<style>@keyframes mq{to{transform:translateX(-50%)}}.mq{animation:mq 35s linear infinite}@media (prefers-reduced-motion:reduce){.mq{animation:none}}</style>
+<div class="mq flex w-max gap-10 font-display italic text-3xl md:text-5xl whitespace-nowrap">
+<span>Thé à la menthe à 17h ✦ Terrasse sur l'Atlas ✦ Hammam au savon noir ✦ Fleur d'oranger ✦ Médina à pied ✦</span>
+<span>Thé à la menthe à 17h ✦ Terrasse sur l'Atlas ✦ Hammam au savon noir ✦ Fleur d'oranger ✦ Médina à pied ✦</span>
+</div>
+</div>
+
+<section id="riad" class="relative px-5 md:px-10 py-24 md:py-40">
+<style>@media (prefers-reduced-motion: no-preference) { @supports (animation-timeline: view()) { .reveal { animation: reveal both cubic-bezier(0.16, 1, 0.3, 1); animation-timeline: view(); animation-range: entry 0% entry 90%; } } } @keyframes reveal { from { opacity: 0; transform: translateY(3rem) scale(0.98); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){.par{animation:par linear both;animation-timeline:view()}}}@keyframes par{from{transform:translateY(-8%) scale(1.15)}to{transform:translateY(8%) scale(1.15)}}</style>
+<div class="grid md:grid-cols-12 gap-10 items-start">
+<div class="md:col-span-5 md:sticky md:top-28">
+<p class="reveal text-xs uppercase tracking-[0.4em] text-ocre mb-6">01 — Le Riad</p>
+<h2 class="reveal font-display text-[clamp(2.6rem,6vw,5.5rem)] leading-[0.9] tracking-[-0.03em]">Une porte bleue.<br><em class="text-ocre">Puis le silence.</em></h2>
+<p class="reveal mt-8 text-lg leading-relaxed text-nuit/75 max-w-md">Derrière une porte cloutée de la rue Riad Zitoun, le vacarme de la médina s'éteint d'un coup. Ici, l'eau de la fontaine, le bruissement des bougainvilliers, le pas feutré de Fatima qui apporte les cornes de gazelle.</p>
+<div class="reveal mt-10 grid grid-cols-3 gap-4 border-t border-nuit/15 pt-6">
+<div><p class="font-display text-4xl">9</p><p class="text-xs uppercase tracking-widest text-nuit/60">chambres</p></div>
+<div><p class="font-display text-4xl">1924</p><p class="text-xs uppercase tracking-widest text-nuit/60">bâti</p></div>
+<div><p class="font-display text-4xl">4'</p><p class="text-xs uppercase tracking-widest text-nuit/60">de Jemaa el-Fna</p></div>
+</div>
+</div>
+<div class="md:col-span-7 grid grid-cols-2 gap-4 md:gap-6">
+<div class="reveal col-span-2 aspect-[16/11] overflow-hidden rounded-[2rem]"><img class="par w-full h-full object-cover" src="https://images.unsplash.com/photo-1759250451654-72ab594ba2c9?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Cour intérieure d'un riad marocain baignée de lumière"></div>
+<div class="reveal aspect-[3/4] overflow-hidden rounded-t-full"><img class="par w-full h-full object-cover" src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Ruelle colorée de la médina de Marrakech"></div>
+<div class="reveal aspect-[3/4] overflow-hidden rounded-b-full mt-16"><img class="par w-full h-full object-cover" src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Détail d'architecture marocaine et zellige"></div>
+</div>
+</div>
+</section>
+
+<section id="chambres" class="relative h-[400vh] bg-nuit text-sable" style="view-timeline-name:--pin">
+<style>@media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){.track{animation:track linear both;animation-timeline:--pin;animation-range:contain 0% contain 100%}}}@keyframes track{to{transform:translateX(calc(-100% + 100vw))}}
+@supports not (animation-timeline:view()){#chambres{height:auto}#chambres .stick{position:relative;height:auto}#chambres .track{overflow-x:auto}}</style>
+<div class="stick sticky top-0 h-[100svh] overflow-hidden flex flex-col justify-center">
+<div class="px-5 md:px-10 mb-8 flex items-end justify-between gap-4">
+<h2 class="font-display text-[clamp(2.4rem,7vw,6.5rem)] leading-[0.85] tracking-[-0.03em]">Neuf chambres,<br><em class="text-safran">neuf épices.</em></h2>
+<p class="hidden md:block text-sable/60 max-w-xs text-sm">Chaque chambre porte le nom et la couleur d'une épice du souk. Faites défiler.</p>
+</div>
+<div class="track flex gap-6 px-5 md:px-10 w-max">
+<article class="group w-[78vw] md:w-[34vw] shrink-0"><div class="aspect-[4/5] overflow-hidden rounded-t-[999px] bg-terre"><img class="w-full h-full object-cover group-hover:scale-110 transition duration-[1.2s]" src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Chambre Safran avec lit et tons chauds"></div><div class="flex justify-between mt-4"><h3 class="font-display text-3xl">Safran</h3><p class="text-safran">dès 290 €</p></div><p class="text-sable/60 text-sm">Suite au patio · 38 m² · cheminée en tadelakt</p></article>
+<article class="group w-[78vw] md:w-[34vw] shrink-0"><div class="aspect-[4/5] overflow-hidden rounded-t-[999px] bg-terre"><img class="w-full h-full object-cover group-hover:scale-110 transition duration-[1.2s]" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Chambre Cumin ouverte sur la piscine"></div><div class="flex justify-between mt-4"><h3 class="font-display text-3xl">Cumin</h3><p class="text-safran">dès 240 €</p></div><p class="text-sable/60 text-sm">Accès bassin · 30 m² · lit à baldaquin</p></article>
+<article class="group w-[78vw] md:w-[34vw] shrink-0"><div class="aspect-[4/5] overflow-hidden rounded-t-[999px] bg-terre"><img class="w-full h-full object-cover group-hover:scale-110 transition duration-[1.2s]" src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Chambre Cannelle élégante et lumineuse"></div><div class="flex justify-between mt-4"><h3 class="font-display text-3xl">Cannelle</h3><p class="text-safran">dès 210 €</p></div><p class="text-sable/60 text-sm">Étage · 26 m² · moucharabieh sculpté</p></article>
+<article class="group w-[78vw] md:w-[34vw] shrink-0"><div class="aspect-[4/5] overflow-hidden rounded-t-[999px] bg-terre"><img class="w-full h-full object-cover group-hover:scale-110 transition duration-[1.2s]" src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Suite Indigo avec lit king size"></div><div class="flex justify-between mt-4"><h3 class="font-display text-3xl">Indigo</h3><p class="text-safran">dès 360 €</p></div><p class="text-sable/60 text-sm">Suite terrasse privée · 52 m² · vue Koutoubia</p></article>
+</div>
+</div>
+</section>
+
+<section id="table" class="relative px-5 md:px-10 py-24 md:py-36 bg-sable overflow-hidden">
+<div class="grid md:grid-cols-12 gap-8">
+<div class="md:col-span-7 md:col-start-1 reveal relative">
+<div class="aspect-[4/3] overflow-hidden rounded-[2rem]"><img class="w-full h-full object-cover hover:scale-105 transition duration-1000" src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Tajine marocain servi dans un plat en terre cuite"></div>
+<p class="absolute -bottom-8 md:-bottom-14 right-2 md:-right-16 font-display italic text-ocre text-[clamp(4rem,12vw,10rem)] leading-none pointer-events-none">Table</p>
+</div>
+<div class="md:col-span-4 md:col-start-9 self-center mt-12 md:mt-0">
+<p class="reveal text-xs uppercase tracking-[0.4em] text-ocre mb-6">02 — La table de Lalla Aïcha</p>
+<h2 class="reveal font-display text-[clamp(2.2rem,4.5vw,4rem)] leading-[0.95] tracking-tight">Le tajine cuit depuis l'aube.</h2>
+<p class="reveal mt-6 leading-relaxed text-nuit/75">Notre cuisinière fait le marché chaque matin au souk Laarjane. Le soir, un menu unique de cinq plats, servi sur la terrasse à la lueur des lanternes de cuivre.</p>
+<ul class="reveal mt-8 divide-y divide-nuit/15 border-y border-nuit/15">
+<li class="flex justify-between py-3 hover:pl-2 transition-all"><span>Pastilla au pigeon &amp; amandes</span><span class="text-ocre">I</span></li>
+<li class="flex justify-between py-3 hover:pl-2 transition-all"><span>Tanjia d'agneau, citron confit</span><span class="text-ocre">II</span></li>
+<li class="flex justify-between py-3 hover:pl-2 transition-all"><span>Orange à la cannelle, eau de rose</span><span class="text-ocre">III</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="hammam" class="relative min-h-[90svh] flex items-center text-sable overflow-hidden">
+<img class="par absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&amp;fit=crop&amp;w=1800&amp;q=80" alt="Soin de spa et massage relaxant au hammam">
+<div class="absolute inset-0 bg-gradient-to-r from-zellige via-zellige/80 to-transparent"></div>
+<div class="relative px-5 md:px-10 py-24 max-w-3xl">
+<p class="reveal text-xs uppercase tracking-[0.4em] text-safran mb-6">03 — Hammam &amp; Spa</p>
+<h2 class="reveal font-display text-[clamp(3rem,8vw,7.5rem)] leading-[0.85] tracking-[-0.03em]">Vapeur,<br><em>savon noir,</em><br>renaissance.</h2>
+<div class="reveal mt-10 grid sm:grid-cols-3 gap-4">
+<div class="rounded-2xl bg-sable/10 backdrop-blur-md border border-sable/20 p-5 hover:bg-sable/20 hover:-translate-y-1 transition duration-500"><i class="fa-solid fa-droplet text-safran"></i><p class="font-display text-xl mt-3">Rituel beldi</p><p class="text-sm text-sable/70">60 min · 85 €</p></div>
+<div class="rounded-2xl bg-sable/10 backdrop-blur-md border border-sable/20 p-5 hover:bg-sable/20 hover:-translate-y-1 transition duration-500"><i class="fa-solid fa-spa text-safran"></i><p class="font-display text-xl mt-3">Massage à l'argan</p><p class="text-sm text-sable/70">75 min · 110 €</p></div>
+<div class="rounded-2xl bg-sable/10 backdrop-blur-md border border-sable/20 p-5 hover:bg-sable/20 hover:-translate-y-1 transition duration-500"><i class="fa-solid fa-leaf text-safran"></i><p class="font-display text-xl mt-3">Ghassoul &amp; rose</p><p class="text-sm text-sable/70">45 min · 70 €</p></div>
+</div>
+</div>
+</section>
+
+<section class="px-5 md:px-10 py-24 md:py-36 bg-sable">
+<p class="reveal text-xs uppercase tracking-[0.4em] text-ocre mb-6">04 — Au-delà des murs</p>
+<h2 class="reveal font-display text-[clamp(2.4rem,6vw,5.5rem)] leading-[0.9] tracking-tight max-w-4xl mb-14">Marrakech, <em class="text-ocre">racontée par ceux qui y vivent.</em></h2>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 md:h-[640px]">
+<a href="#" class="reveal group relative md:col-span-2 md:row-span-2 rounded-[2rem] overflow-hidden min-h-[320px]"><img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-[1.2s]" src="https://images.unsplash.com/photo-1597211833712-5e41faa202ea?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Le jardin Majorelle et son bleu iconique"><div class="absolute inset-0 bg-gradient-to-t from-nuit/80 to-transparent"></div><div class="absolute bottom-6 left-6 text-sable"><p class="font-display text-3xl md:text-4xl">Jardin Majorelle à l'ouverture</p><p class="text-sm text-sable/70">Avant la foule · 8h · avec Youssef</p></div></a>
+<a href="#" class="reveal group relative md:col-span-2 rounded-[2rem] overflow-hidden min-h-[220px]"><img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-[1.2s]" src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Dunes du désert au coucher du soleil"><div class="absolute inset-0 bg-gradient-to-t from-nuit/80 to-transparent"></div><div class="absolute bottom-6 left-6 text-sable"><p class="font-display text-2xl">Nuit à Agafay</p><p class="text-sm text-sable/70">Désert de pierre · 45 min</p></div></a>
+<div class="reveal rounded-[2rem] bg-ocre text-sable p-6 flex flex-col justify-between min-h-[200px] hover:-rotate-1 transition"><i class="fa-solid fa-mug-hot text-2xl"></i><p class="font-display text-2xl">Cours de thé avec Fatima</p></div>
+<div class="reveal rounded-[2rem] bg-zellige text-sable p-6 flex flex-col justify-between min-h-[200px] hover:rotate-1 transition"><i class="fa-solid fa-mountain-sun text-2xl"></i><p class="font-display text-2xl">Randonnée dans l'Atlas</p></div>
+</div>
+</section>
+
+<section class="bg-terre text-sable px-5 md:px-10 py-24 md:py-32 text-center relative overflow-hidden">
+<div class="absolute inset-0 grain opacity-10"></div>
+<i class="reveal fa-solid fa-quote-left text-safran text-4xl"></i>
+<blockquote class="reveal relative font-display italic text-[clamp(1.8rem,4.5vw,4rem)] leading-[1.05] max-w-5xl mx-auto mt-6">« On croyait réserver une chambre. On a trouvé une maison, une famille, et le plus beau ciel étoilé de notre vie. »</blockquote>
+<p class="reveal mt-8 text-xs uppercase tracking-[0.4em] text-sable/70">Camille &amp; Hugo — Lyon · Mars 2026</p>
+</section>
+
+<section id="reserver" class="px-5 md:px-10 py-24 md:py-36 bg-sable">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<h2 class="reveal font-display text-[clamp(3rem,9vw,8rem)] leading-[0.82] tracking-[-0.04em]">Votre clé<br><em class="text-ocre">vous attend.</em></h2>
+<form class="reveal bg-nuit text-sable rounded-[2rem] p-6 md:p-10 grid gap-4 shadow-[0_40px_80px_-20px_#7A2E1A88]" onsubmit="event.preventDefault();this.querySelector('button').textContent='Merci — nous vous écrivons sous 24h ✦'">
+<label class="grid gap-1 text-xs uppercase tracking-widest text-sable/60">Arrivée<input type="date" class="bg-transparent border-b border-sable/30 py-2 text-base text-sable focus:outline-none focus:border-safran transition"></label>
+<label class="grid gap-1 text-xs uppercase tracking-widest text-sable/60">Départ<input type="date" class="bg-transparent border-b border-sable/30 py-2 text-base text-sable focus:outline-none focus:border-safran transition"></label>
+<label class="grid gap-1 text-xs uppercase tracking-widest text-sable/60">Courriel<input type="email" required="" placeholder="vous@exemple.fr" class="bg-transparent border-b border-sable/30 py-2 text-base text-sable placeholder:text-sable/30 focus:outline-none focus:border-safran transition"></label>
+<button class="mt-4 bg-ocre rounded-full py-4 hover:bg-safran hover:text-nuit hover:-translate-y-1 transition duration-500 focus:outline-none focus:ring-2 focus:ring-safran">Demander une disponibilité</button>
+</form>
+</div>
+</section>
+
+<footer class="bg-nuit text-sable px-5 md:px-10 pt-20 pb-8">
+<p class="font-display font-black tracking-[-0.05em] leading-none text-[clamp(4rem,17vw,16rem)] text-ocre">Dar Safran</p>
+<div class="grid sm:grid-cols-3 gap-8 mt-10 text-sm text-sable/70">
+<p>14 derb Lalla Azzouna<br>Riad Zitoun el Kdim<br>40000 Marrakech, Maroc</p>
+<p><a href="tel:+212524000000" class="hover:text-safran transition">+212 5 24 00 00 00</a><br><a href="mailto:salam@darsafran.ma" class="hover:text-safran transition">salam@darsafran.ma</a></p>
+<div class="flex gap-4 text-xl sm:justify-end"><a href="#" aria-label="Instagram" class="hover:text-safran hover:-translate-y-1 transition"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Pinterest" class="hover:text-safran hover:-translate-y-1 transition"><i class="fa-brands fa-pinterest"></i></a><a href="#" aria-label="WhatsApp" class="hover:text-safran hover:-translate-y-1 transition"><i class="fa-brands fa-whatsapp"></i></a></div>
+</div>
+<p class="mt-12 text-xs text-sable/40">© 2026 Dar Safran · Riad de charme · Fait avec patience dans la médina.</p>
+</footer>
+</body>
+</html>
